@@ -34,6 +34,10 @@ tableData.forEach((ufoItem) => {
 
     var filteredData = tableData.filter(ufo => ufo.datetime === inputValue);
     
+    if (inputValue == "") {
+      filteredData = tableData;
+    }
+
     //console.log(filteredData);
 
     // Get a reference to the table body from index.html, display filter data
